@@ -1,0 +1,41 @@
+div.alert {
+    position: fixed;
+    /* background: var(--bs-success); */
+    border: none;
+    z-index: 10001;
+    bottom: 10px;
+    margin-left: 20px;
+    width: 300px;
+    color: var(--bs-teal);
+    animation: fadeaway 3s linear forwards;
+}
+.bar {
+    background-color: lightgray;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom-right-radius: 6px;
+    float: right;
+    animation: fill 3s linear forwards;
+}
+@keyframes fill {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+@keyframes fadeaway {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
